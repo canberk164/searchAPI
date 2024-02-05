@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 function SearchHeader({ search }) {
-  const [valueInput, setValue] = useState('');
+  const [valueInput, setValue] = useState("");
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    debugger;
+    // debugger;
     search(valueInput);
   };
 
@@ -15,7 +15,10 @@ function SearchHeader({ search }) {
   return (
     <div className="searchDiv">
       <form onSubmit={handleFormSubmit}>
-        <label>Ne Arıyorsunuz?</label>
+        <label>
+          You can search for whatever you want to see. (For example: cars,
+          houses, etc.)
+        </label>
         <input value={valueInput} onChange={handleChange} />
       </form>
     </div>
