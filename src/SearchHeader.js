@@ -16,8 +16,7 @@ function SearchHeader({ search }) {
     <div className="searchDiv">
       <form onSubmit={handleFormSubmit}>
         <label>
-          You can search for whatever you want to see. (For example: cars,
-          houses, etc.)
+          You can search for whatever you want to see. (For example: atatürk, cities, cars, etc.)
         </label>
         <input value={valueInput} onChange={handleChange} />
       </form>
